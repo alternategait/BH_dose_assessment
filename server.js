@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const mainRoutes = require("./routes/main");
-const report = require("./module/report");
 
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
