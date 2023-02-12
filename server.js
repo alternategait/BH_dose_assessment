@@ -6,16 +6,10 @@ const mainRoutes = require("./routes/main");
 require("dotenv").config({ path: "./config/.env" });
 
 
-
-//Static Folder
-app.use(express.static("public"));
-
 //Body Parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//Use forms for put / delete
-// app.use(methodOverride("_method"));
 
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);
