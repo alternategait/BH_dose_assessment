@@ -14,4 +14,3 @@ npm install to download packages. In case package.json is not working ` npm init
 #### Optimizations
 
 - File system read of docs folder to place files into documents array
-- export as module
